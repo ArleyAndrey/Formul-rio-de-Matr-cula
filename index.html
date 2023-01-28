@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <h1>Formulário de pré-matrícula:</h1>
+    </header>
+    <div class="cont_cadastro">
+        <div class="cadastro">
+            <section class="info_pessoal">
+                <fieldset>
+                    <Legend>Informações Pessoais:</Legend>
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <td><label for="nomeAluno">Nome do Aluno:</label></td>
+                                <td><input type="text" id="nomeAluno"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nomeMae">Nome da Mãe:</label></td>
+                                <td><input type="text" id="nomeMae"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nomePai">Nome do Pai:</label></td>
+                                <td><input type="text" id="nomePai"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="cpf">CPF:</label></td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="estado">Estado:</label></td>
+                                <td><select name="" id="estado">
+                                        <option value="">Paraíba</option>
+                                        <option value="">Manaus</option>
+                                        <option value="">São Paulo</option>
+                                    </select></td>
+                            <tr>
+                                <td><label for="cidade">Cidade:</label></td>
+                                <td><select name="" id="cidade">
+                                        <option value="">Queimadas</option>
+                                        <option value="">Campina Grande</option>
+                                        <option value="">João Pessoa</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nascimento">Data de Nascimento:</label></td>
+                                <td><input type="date" id="nascimento"></td>
+                            </tr>
+                            <tr>
+                                <td class="telefone"><label for="telefone">Telefone:</label></td>
+                                <td class="ddd"><b>ddd(<input type="tel" id="ddd">)</b> <input type="tel" class="número"></td>
+
+
+                            </tr>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </section>
+            <section class="info_escolares">
+                <fieldset>
+                    <legend>Informações de Matrícula:</legend>
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <td><label for="sexo">Genêro:</label> </td>
+                                <td><select id="sexo">
+                                        <option value="">Masculino</option>
+                                        <option value="">Feminino</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="turno">Turno:</label></td>
+                                <td><label for="manhã">Manhã</label><input id="manhã" type="checkbox"> / <label
+                                        for="tarde">Tarde</label> <input type="checkbox" id="tarde"></td>
+                            </tr>
+
+                        </table>
+                        <div class="cont_atividades">
+                            <label for="extras" class="ativides">Atividades Extras Currículares:</label>
+                            <div><label for="informatica">Informática:</label><input type="checkbox" id="informatica">
+                            </div class = "margin_ativi">
+                            <div><label for="dança">Dança:</label><input type="checkbox" id="dança"></div>
+                            <div><label for="futebol">Futebol:</label><input type="checkbox" id="informatica"></div>
+                            <div><label for="musica">Música:</label><input type="checkbox" id="musica"></div>
+                            <div><input type="checkbox" id="termo"> <label for="termo">Confirmo que li os termos</label>
+                            </div>
+                            <div class="cont_botão"><input type="submit" value="Cadastrar" id="botão"></div>
+
+
+                        </div>
+
+                    </form>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
